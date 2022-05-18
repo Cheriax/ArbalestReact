@@ -1,6 +1,6 @@
-import React from 'react';
-import MenuAppBar from './Components/MenuAppBar';
-import Button from "@mui/material"
+import React, {useState} from 'react';
+import MenuAppBar from './components/MenuAppBar';
+import Button from "@mui/material/Button"
 import SignInButton from './components/SignInButton';
 import { AuthenticatedTemplate, UnauthenticatedTemplate, useMsal } from "@azure/msal-react";
 import { loginRequest } from "./authConfig";
@@ -44,6 +44,7 @@ function App() {
   return (
     <>
       <MenuAppBar />
+      
       <AuthenticatedTemplate>
         <p>You are signed in!</p>
         <ProfileContent />
