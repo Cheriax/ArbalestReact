@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import MenuAppBar from './components/MenuAppBar';
+import MenuAppBar from './custom_components/MenuAppBar';
 import Button from "@mui/material/Button"
-import SignInButton from './components/SignInButton';
+import SignInButton from './custom_components/SignInButton';
 import { AuthenticatedTemplate, UnauthenticatedTemplate, useMsal } from "@azure/msal-react";
 import { loginRequest } from "./authConfig";
 
